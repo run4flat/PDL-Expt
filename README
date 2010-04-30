@@ -1,0 +1,65 @@
+PDL-Expt
+
+The Perl Data Language - PDL for short - is a powerful extension to
+Perl that provides optimized, vectorized mathematics akin to those
+available in Matlab or IDL. PDL::Expt is the Perl Data Language's
+Experimental Sandbox.
+
+Sometimes those of us who use PDL come up with handy functions or
+scripts. They are too small to warrant their own CPAN distribution
+and not yet polished enough to warrant being added into PDL's base
+distribution. PDL::Expt is a place for just these sorts of ideas,
+and any other experimental work with PDL. It is both a route for
+new modules into the base distribution and a final resting place
+many small modules whose authors just want to get their ideas
+'out there.'
+
+All code submitted to PDL::Expt is placed in an author-specific
+subdirectory (not unlike CPAN). For example, contributions from
+David Mertens can be found in PDL::Expt::dcmertens. For more
+information, see the documentation for PDL::Expt.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc PDL::Expt
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=PDL-Expt
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/PDL-Expt
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/PDL-Expt
+
+    Search CPAN
+        http://search.cpan.org/dist/PDL-Expt/
+
+
+COPYRIGHT AND LICENCE
+
+This distribution is copyright (C) 2010 David Mertens
+
+The copyright to each of the underlying modules is held by their
+respective authors as detailed (hopefully) in their pod.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
+

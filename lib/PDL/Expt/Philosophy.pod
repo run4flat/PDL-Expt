@@ -1,0 +1,67 @@
+=pod
+
+=head1 NAME
+
+PDL::Expt::Philosophy - an explanation of why PDL::Expt exists
+
+=head1 AUTHOR
+
+David Mertens
+
+=head1 REVISED
+
+This document was last revised April 18, 2010.
+
+=head1 It All Starts with an Idea
+
+There you are happily working on your code, using PDL. You realize that
+you use the same functionality a lot, so you pull the code out into a
+separate function. You keep using this idea, over and over, so you put
+it into a separate file that you can easily include. Maybe it's a .pdl
+file that gets pulled in using L<PDL::Autoloader>, or maybe its a module
+that you pull in by name using L<local::lib>. It's just a snippet of
+code that seems to do its job. Suddenly it occurs to you: maybe somebody
+else will find this function useful! You're not quite sure where to put
+it in the PDL pantheon, but you're pretty sure that other people will
+benefit. What do you do?
+
+Historically, your options have included:
+
+=over
+
+=item 1. Petition to have the function added to the PDL base distribution.
+
+This would involve downloading a recent version of the source, adding
+your code to it, and generating a patch, which you would submit to the
+project maintainers. You would need to include full documentation as
+well as tests, and the location needs to be permanent. If you realize
+later that your idea would be better suited under some other name, you
+can't change it without potentially breaking other people's code. This
+forces you too make lots of unchangeable decisions with code even if it
+is still highly experimental.
+
+=item 2. Release your code through your own CPAN distribution.
+
+In order to do this, you would need a PAUSE account and you would need
+to feel comfortable creating a CPAN distrubtion, which is more difficult
+than it should be. Now you face the issue of publicizing your ideas.
+You can try to publish to the PDL mailing lists, but chances are small
+that anybody would download your module unless it contains some extremely
+useful functionality that can't be obtained using a different module.
+After all this hard work, your code languishes in relative obscurity.
+
+=item 3. Email the PDL mailing list with your code and ask people to try it.
+
+This will only work 
+
+=back
+
+Before the creation of PDL::Expt, you had three options. You could
+(1) try to clean up the code, documentation and tests, and ask to have
+it added to the base PDL distribution, (2) spam the pdl email lists with
+you code attached and say, "Hey, look at my cool new module" and annoy
+everybody not interested in that module, or (3) attempt to package the
+module in its own CPAN distribution. For small ideas or functions that
+you are just beginning to use, this is a huge pain.
+
+=cut
